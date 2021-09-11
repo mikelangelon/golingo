@@ -19,23 +19,13 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// wordCmd represents the word command
-var wordCmd = &cobra.Command{
-	Use:   "word",
-	Short: "Add a word to study and review",
-	Long:  `Add a word to study and review`,
+// cardCmd represents the word command
+var cardCmd = &cobra.Command{
+	Use:   "card",
+	Short: "Add a card to study and review",
+	Long:  `Add a card to study and review`,
 }
 
 func init() {
-	rootCmd.AddCommand(wordCmd)
-
-	// Here you will define your flags and configuration settings.
-
-	// Cobra supports Persistent Flags which will work for this command
-	// and all subcommands, e.g.:
-	// wordCmd.PersistentFlags().String("foo", "", "A help for foo")
-
-	// Cobra supports local flags which will only run when this command
-	// is called directly, e.g.:
-	// wordCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	rootCmd.AddCommand(cardCmd)
 }

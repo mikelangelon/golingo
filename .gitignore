@@ -1,3 +1,5 @@
 golingo
 /vendor
 .idea
+*.db
+
